@@ -10,6 +10,7 @@
     "bootstrap-loader": "^1.0.10",
     "bootstrap-sass": "^3.3.6",
     "bootswatch": "^3.3.6",
+    "cross-env": "^2.0.0",
     "css-loader": "^0.23.1",
     "eslint": "^2.11.1",
     "extract-text-webpack-plugin": "^1.0.1",
@@ -29,7 +30,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "NODE_ENV=production webpack --progress --colors",
+    "build": "cross-env NODE_ENV=production webpack --progress --colors",
     "lint": "eslint --color assets/javascripts/*.js || exit 0",
     "watch": "webpack --progress --colors --watch"
   },
